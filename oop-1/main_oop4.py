@@ -50,11 +50,9 @@ class Fraction:
 		return self.__num / self.__den
 
 
-# f1 = Fraction(2, 3, int_part=3)
-f2 = Fraction(3, 3)
-#
-# f3: Fraction = f1.add(f2)
-# f4: Fraction = f3.add(f1)
+f1: Fraction = Fraction(5, 7)
+f2: Fraction = Fraction(1, 7)
 
-print(f2)
-# print(f.get_num())
+f3: Fraction = f1.add(f2)
+print(f3)
+print(float(f3))
