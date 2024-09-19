@@ -1,4 +1,3 @@
-
 # Задание 1
 # Создайте класс Число (или используйте уже ранее
 # созданный вами). Класс число хранит внутри одно
@@ -10,8 +9,8 @@ from __future__ import annotations
 
 
 class Number:
-	def __init__(self, value: int):
-		self.__value: int = value
+	def __init__(self, value: int | float):
+		self.__value: int | float = value
 
 	def __str__(self) -> str:
 		return str(self.__value)
@@ -20,13 +19,13 @@ class Number:
 		return Number(self.__value + other.__value)
 
 	def __sub__(self, other: Number) -> Number:
-		pass
+		return Number(self.__value - other.__value)
 
 	def __mul__(self, other: Number) -> Number:
-		pass
+		return Number(self.__value * other.__value)
 
 	def __truediv__(self, other: Number) -> Number:
-		pass
+		return Number(self.__value / other.__value)
 
 
 a = Number(5)
