@@ -1,18 +1,13 @@
-from figures import Coordinated, Circle, Square
+from pets import Dog, Fish, Cat
 
-# figures: list[Figure] = [
-# 	Circle(1, 2, 3),
-# 	Circle(1, 2, 3),
-# 	Circle(1, 2, 3),
-# 	Square(1, 2, 3),
-# 	Square(1, 2, 3),
-# 	Circle(1, 2, 3),
-# 	Square(1, 2, 3),
-# 	Square(1, 2, 3),
-# ]
+pets = [
+	Dog('AAA', 10, 'KOGRICH', 1),
+	Fish('NEMA', 1, 'AKULA'),
+	Cat('SEMON', 1, 'BLACK CAT'),
+	Cat('SEMON', 1, 'NI***A CAT'),
+	Fish('AMEN', 1, 'NE AKULA'),
+	Dog('VITALYA', 1, 'ON ZDESb!', 8)
+]
 
-s = Square(4)
-print(s.area())
-
-a = Circle(1, 2, 3)
-a.distance(s)
+for pet in pets:
+	pet.about()
