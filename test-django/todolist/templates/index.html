@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo list</title>
+</head>
+<body>
+    <h1>It's our todo listasdasdffsd</h1>
+    <table border="1" style="width: 100%;">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>description</th>
+                <th>completed</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for task in tasks %}
+                <tr>
+                    <td>{{ task.id }}</td>
+                    <td>{{ task.name }}</td>
+                    <td>{{ task.description }}</td>
+                    <td>{{ task.completed }}</td>
+                </tr>
+            {% endfor %}
+
+<!--            <tr>-->
+<!--                <td></td>-->
+<!--                <td>awsdf</td>-->
+<!--                <td>asdfasdfas</td>-->
+<!--            </tr>-->
+        </tbody>
+    </table>
+</body>
+</html>

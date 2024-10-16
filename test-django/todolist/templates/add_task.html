@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Добавить задачу</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        <p>
+            <label>Название</label>
+            <input type="text" name="name">
+        </p>
+        <p>
+            <label>Описание</label>
+            <input type="text" name="description">
+        </p>
+
+        <button type="submit">Создать</button>
+    </form>
+</body>
+</html>
