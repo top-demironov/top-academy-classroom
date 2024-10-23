@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Andrey",
+    "age": 19,
+    "address": {
+      "city": "Moscow",
+      "street": "asdfdasf"
+    }
+  },
+  {
+    "name": "Viktor",
+    "age": 20,
+    "address": {
+      "city": "Krsk",
+      "street": "asdfdasf"
+    }
+  }
+]
