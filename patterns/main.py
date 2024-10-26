@@ -34,8 +34,6 @@ class OddIterator(Iterator):
 
 		raise StopIteration()
 
-# test line
-
 
 class NumbersCollection(Iterable):
 	def __init__(self, collection: list[int]):
