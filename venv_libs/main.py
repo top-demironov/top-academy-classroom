@@ -4,7 +4,17 @@ import requests
 import pandas as pd
 import numpy
 
-pd.read_csv()
+# Создаем виртуальную среду, ЕСЛИ НЕ ПАЙЧАРМ!
+# python -m venv venv
 
+# Активируем виртуальную среду, ЕСЛИ НЕ ПАЙЧАРМ!
+# venv/Scripts/activate
 
+# Установить библиотеку
+# pip install pandas
+
+# Создать файл с установленными зависимостями
 # pip freeze > requirements.txt
+
+# Установка зависимостей с файла
+# pip install -r requirements.txt
