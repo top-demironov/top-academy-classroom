@@ -1,8 +1,12 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
+from polls.models import Question
+
 
 def index(request):
-	a = 3
-	b = 4
-	return HttpResponse(f'{a} + {b} = {a + b}')
+	return HttpResponse(f'sdf')
+
+
+def news(request):
+	return HttpResponse(f'НОВОСТИ УРААААА ')
