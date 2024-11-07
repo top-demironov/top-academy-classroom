@@ -1,0 +1,15 @@
+
+
+python -m venv venv
+venv/Scripts/activate
+
+pip install django
+
+Смотрим документацию django
+https://docs.djangoproject.com/en/5.1/intro/tutorial01/
+
+
+pip freeze > requirements.txt
+pip install -r requirements.txt
+
+
