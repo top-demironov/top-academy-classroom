@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Polls</title>
+</head>
+<body>
+    <h1>Список вопросы</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Дата публикации</th>
+                <th>Вопрос</th>
+                <th>Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for question in questions %}
+                <tr>
+                    <td>{{ question.pub_date }}</td>
+                    <td>{{ question.text }}</td>
+                    <td><a href="{% url 'detail' question.id %}">Открыть</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+</html>

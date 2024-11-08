@@ -87,3 +87,36 @@ from __future__ import annotations
 # print(f'{f1} + {f2} = {f3}')
 # print(float(f3))
 
+
+# class Ship:
+# 	def __init__(self, max_speed: float):
+# 		self.__max_speed = max_speed
+# 		self.__speed = 0
+#
+# 	@property
+# 	def speed(self) -> float:
+# 		return self.__speed
+#
+# 	@speed.setter
+# 	def speed(self, speed: float):
+# 		if speed > self.__max_speed:
+# 			raise Exception(f'Speed cannot be greater than max speed {self.__max_speed}')
+# 		self.__speed = speed
+#
+# 	def up_speed(self, offset: float):
+# 		new_speed = self.__speed + offset
+# 		if new_speed > self.__max_speed:
+# 			raise Exception(f'Speed cannot be greater than max speed {self.__max_speed}')
+# 		self.__speed = new_speed
+#
+#
+# ship: Ship = Ship(10)
+#
+# ship.speed = 9
+# print(ship.speed)
+#
+# ship.up_speed(1)
+# print(ship.speed)
+#
+# ship.up_speed(-1)
+# print(ship.speed)
