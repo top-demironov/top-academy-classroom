@@ -1,5 +1,5 @@
 """
-URL configuration for polls project.
+URL configuration for polls2 project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
@@ -17,7 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from django.conf.urls import handler404
+from qa import views
+
 urlpatterns = [
     path('', include('qa.urls')),
     path('admin/', admin.site.urls),
 ]
+
+
+# handler404 = 'qa.views.error'

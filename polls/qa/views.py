@@ -6,7 +6,7 @@ from qa.models import Question, Choice
 
 def index(request):
 	questions = Question.objects.all()
-	return render(request, 'index.html', {'questions': questions})
+	return HttpResponse('<script>alert("asdf")</script>')
 
 
 def detail(request, question_id):
