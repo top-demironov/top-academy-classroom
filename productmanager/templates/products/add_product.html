@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавление продукта</title>
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+    }
+
+    form label {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+</style>
+<body>
+    <h1>Добавить продукт</h1>
+    <form action="{% url 'add_product' %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+{#        <label>#}
+{#            <span>Название товара</span>#}
+{#            <input type="text" name="name" placeholder="Шоколадка">#}
+{#        </label>#}
+{#        <label for="description">#}
+{#            <span>Описание</span>#}
+{#            <input type="text" name="description" placeholder="Какие-то слова">#}
+{#        </label>#}
+{##}
+{#        <label for="price">#}
+{#            <span>Цена</span>#}
+{#            <input type="float" name="price" placeholder="12.32">#}
+{#        </label>#}
+
+        <input type="submit">
+    </form>
+</body>
+</html>
