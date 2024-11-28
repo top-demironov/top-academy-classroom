@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <section class="container py-5" style="min-height: calc(100vh - 56px - 56px);">
+        <span class="text-body-tertiary">{{ post.pub_date }}</span>
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.content }}</p>
+        <img class="img-fluid" src="{% static 'images/dark-snake.jpg' %}" alt="Черная змея">
+    </section>
+{% endblock %}
